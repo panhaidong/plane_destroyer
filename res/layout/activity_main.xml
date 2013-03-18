@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/airports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager>
+
+<!--     <org.zhutou.planedestroyer.AirportView
+        android:id="@+id/airports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </org.zhutou.planedestroyer.AirportView>
+ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Start" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/buttonU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Up" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Down" />
+
+            <Button
+                android:id="@+id/buttonL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/buttonR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Right" />
+
+            <Button
+                android:id="@+id/buttonRot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClickHandler"
+                android:text="Rotate" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
